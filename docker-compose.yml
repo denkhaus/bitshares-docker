@@ -16,4 +16,5 @@ cli-wallet-test:
     - "127.0.0.1:8094:8094"
   volumes:
     - /var/docker/bts/testdata:/data
-  command: "/bitshares/programs/cli_wallet/cli_wallet --chain-id 39f5e2ede1f8bc1a3a54a7914414e3779e33193f1f5693510e73cb7a87617447 -s wss://node.testnet.bitshares.eu/ws -H 0.0.0.0:8094 -d"  
+  command: "/bitshares/programs/cli_wallet/cli_wallet -s wss://node.testnet.bitshares.eu/ws -H 0.0.0.0:8094 -d"
+
