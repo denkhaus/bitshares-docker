@@ -6,7 +6,7 @@ cli-wallet-full:
     - "127.0.0.1:8095:8095"
   volumes:
     - /var/docker/bts/data:/data
-  command: "/bitshares/programs/cli_wallet/cli_wallet -s wss://bitshares.openledger.info/ws -H 0.0.0.0:8095 -d"
+  command: "/bitshares/programs/cli_wallet/cli_wallet -s wss://node.market.rudex.org -H 0.0.0.0:8095 -d"
 
 ################################################################################
 cli-wallet-test:
