@@ -32,8 +32,3 @@ build_test:
 
 push_test: build_test
 	docker push $(REPO):$(TAG_TEST)
-
-
-
-
-	
