@@ -1,6 +1,6 @@
-TAG_FULL=2.0.190424
-TAG_TEST=test-2.0.190424
-REPO=denkhaus/bitshares-2
+TAG_FULL=3.0.1
+TAG_TEST=test-3.0.1
+REPO=denkhaus/bitshares
 BUILD_TYPE_FULL=RelWithDebInfo
 BUILD_TYPE_TEST=RelWithDebInfo
 

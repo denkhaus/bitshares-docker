@@ -1,20 +1,20 @@
 ################################################################################
 cli-wallet-full:
   restart: always
-  image: denkhaus/bitshares-2:$TAG_FULL  
+  image: denkhaus/bitshares:$TAG_FULL
   ports:
     - "127.0.0.1:8095:8095"
   volumes:
     - /var/docker/bts/data:/data
-  command: "/bitshares/programs/cli_wallet/cli_wallet -s wss://node.market.rudex.org -H 0.0.0.0:8095 -d"
+  command: "/bitshares/programs/cli_wallet/cli_wallet -swss://eu.nodes.bitshares.ws -H 0.0.0.0:8095 -d"
 
 ################################################################################
 cli-wallet-test:
   restart: always
-  image: denkhaus/bitshares-2:$TAG_TEST
+  image: denkhaus/bitshares:$TAG_TEST
   ports:
     - "127.0.0.1:8094:8094"
   volumes:
     - /var/docker/bts/testdata:/data
-  command: "/bitshares/programs/cli_wallet/cli_wallet -s wss://node.testnet.bitshares.eu/ws -H 0.0.0.0:8094 -d"
+  command: "/bitshares/programs/cli_wallet/cli_wallet -swss://node.testnet.bitshares.eu/ws -H 0.0.0.0:8094 -d"
 
